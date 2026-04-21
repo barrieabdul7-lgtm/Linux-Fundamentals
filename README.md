@@ -16,8 +16,9 @@ uptime -p
 
 echo ""
 echo "3. Memory Usage (Sorted by top consumers):"
-# Using the pipe logic you learned!
+# Using the pipe logic
 ps -eo pid,ppid,cmd,%mem --sort=-%mem | head -n 6
+# Process ID, Parent PID, the Command name, and the Memory percentage.**
 
 echo ""
 echo "4. Checking Disk Space:"
